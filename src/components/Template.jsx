@@ -58,4 +58,4 @@ const TextTemplate = styled.div`
         }
     }
 `
-const ImageTemplate = styled.div``
+// const ImageTemplate = styled.div``
