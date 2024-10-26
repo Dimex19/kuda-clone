@@ -40,7 +40,12 @@ const CardsRowOne = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 50px;`
+    margin-bottom: 50px;
+    @media (max-width: 800px) {
+        margin-bottom: 0px;
+        justify-content: center;
+    }`
+    
 const CardsRowTwo = styled.div`
     display: flex;
     justify-content: space-between;
@@ -49,4 +54,10 @@ const CardsRowTwo = styled.div`
     margin-right: auto;
     margin-left: auto;
     /* border: 1px solid red; */
+
+    @media (max-width: 800px) {
+        margin-top: 0px;
+        justify-content: center;
+
+    }
 `

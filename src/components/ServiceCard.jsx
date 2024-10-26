@@ -16,7 +16,7 @@ export default ServiceCard
 
 const Cards = styled.div`
     /* border: 1px solid red; */
-    width: 280px;
+    max-width: 280px;
     padding: 20px;
     color: #40196d;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -32,5 +32,13 @@ const Cards = styled.div`
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
+    }
+    @media (max-width: 800px) {
+        display: flex;
+        max-width: 90%;
+
+        #profile {
+            margin-right: 20px;
+        }
     }
 `
