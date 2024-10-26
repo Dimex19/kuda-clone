@@ -57,5 +57,23 @@ const TextTemplate = styled.div`
             text-align: center;
         }
     }
+    @media (max-width: 450px) {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        /* text-align: center; */
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+        }
+        a {
+            text-align: center;
+            /* border: 1px solid blue; */
+        }
+    }
 `
 // const ImageTemplate = styled.div``

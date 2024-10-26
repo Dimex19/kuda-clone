@@ -55,7 +55,7 @@ const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 70%;
     margin-right: auto;
     margin-left: auto;
@@ -67,6 +67,7 @@ const Container = styled.div`
     }
     @media (max-width: 450px) {
         /* flex-direction: column; */
+        margin-top: 100px;
     .text {
         flex: 1;
         order: 1;
