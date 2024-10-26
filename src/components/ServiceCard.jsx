@@ -23,8 +23,8 @@ const Cards = styled.div`
 
     #profile {
         background-color: rgb(223, 227, 255);
-        width: auto;
-        height: auto;
+        width: 35px;
+        height: 35px;
         border-radius: 19px;
         font-size: 20px;
         text-align: center;
@@ -37,8 +37,10 @@ const Cards = styled.div`
     @media (max-width: 450px) {
         /* border: 1px solid red; */
         #profile {
-            width: 65px;
-            height: 40px;
+            width: 42px;
+            height: 2rem;
+            font-size: 18px;
+            margin-right: 0px;
             /* margin-right: 50px; */
         }
     }
