@@ -60,4 +60,8 @@ const Container = styled.div`
     margin-right: auto;
     margin-left: auto;
     margin-top: 200px;
+
+    @media (max-width: 800px) {
+        justify-content: center;
+    }
 `

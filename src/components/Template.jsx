@@ -45,5 +45,10 @@ const TextTemplate = styled.div`
         color: #40196d;
         font-weight: 700;
     }
+    @media (max-width: 800px) {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        text-align: center;
+    }
 `
 const ImageTemplate = styled.div``
