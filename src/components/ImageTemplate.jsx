@@ -12,7 +12,7 @@ export default ImageTemplate
 
 const SectionImage = styled.img`
     @media (max-width: 800px) {
-        max-width: 330px;
+        max-width: 280px;
     }
 `
 // const SectionImage = styled.img`
