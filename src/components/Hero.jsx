@@ -92,7 +92,7 @@ const HeroText = styled.div`
         margin-bottom: 40px;
 
         @media (max-width: 450px) {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }  
     }
     p {
