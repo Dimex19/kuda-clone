@@ -32,9 +32,12 @@ const Container = styled.div`
     margin-left: auto;
     margin-right: auto;
     max-width: 70%;
-    
-    /* border: 1px solid red; */
+    border: 1px solid red;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+        max-width: 80%;
+    }
 `
 const CardsRowOne = styled.div`
     display: flex;
@@ -44,6 +47,7 @@ const CardsRowOne = styled.div`
     @media (max-width: 800px) {
         margin-bottom: 0px;
         justify-content: center;
+        /* align-items: center; */
     }`
     
 const CardsRowTwo = styled.div`

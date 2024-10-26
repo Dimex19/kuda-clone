@@ -16,9 +16,10 @@ export default ServiceCard
 
 const Cards = styled.div`
     /* border: 1px solid red; */
-    max-width: 280px;
+    width: 280px;
     padding: 20px;
     color: #40196d;
+    border: 1px solid red;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     #profile {
@@ -35,8 +36,10 @@ const Cards = styled.div`
     }
     @media (max-width: 800px) {
         display: flex;
-        max-width: 90%;
-
+        width: 100%;
+        margin-bottom: 20px;
+        /* justify-content: center; */
+        align-items: center;
         #profile {
             margin-right: 20px;
         }
