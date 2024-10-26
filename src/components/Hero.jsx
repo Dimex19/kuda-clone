@@ -45,22 +45,25 @@ const HeroContainer = styled.div`
     align-items: center;
     max-width: 70%;
     min-height: calc(100vh - 60px);
+    /* border: 1px solid red; */
+
     @media (max-width: 800px) {
-            /* max-width: 80%; */
+            max-width: 80%;
             justify-content: center;
             min-height: 100%;
         }  
 `
 const HeroText = styled.div`
     max-width: 320px;
+    /* border: 1px solid red; */
     @media (max-width: 800px) {
         max-width: 320px;
         margin-top: 80px;
         /* border: 1px solid red; */
     }  
     @media (max-width: 450px) {
-        max-width: 265px;
-        margin-top: 50px;
+        max-width: 100%;
+        margin-top: 80px;
         /* border: 1px solid red; */
     }  
     h1 {
@@ -76,8 +79,8 @@ const HeroText = styled.div`
         }  
         @media (max-width: 450px) {
             text-align: center;
-            font-size: 22px;
-            line-height: 30px;
+            font-size: 28px;
+            line-height: 35px;
         }  
     }
     #heroPara {
@@ -92,8 +95,8 @@ const HeroText = styled.div`
         }
         @media (max-width: 450px) {
             text-align: center;
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 15px;
+            line-height: 23px;
         }  
     }
     .buttons {
@@ -138,6 +141,13 @@ const HeroText = styled.div`
         @media (max-width: 800px) {
             margin-right: auto;
             margin-left: auto;
+        }
+        @media (max-width: 450px) {
+            margin-right: auto;
+            margin-left: auto;
+            /* border: 1px solid red; */
+            justify-content: center;
+
         }
         p{
         display: flex; 
