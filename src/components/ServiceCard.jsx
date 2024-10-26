@@ -36,9 +36,8 @@ const Cards = styled.div`
     }
     @media (max-width: 450px) {
         /* border: 1px solid red; */
-        
         #profile {
-            width: 70px;
+            width: 65px;
             height: 40px;
             /* margin-right: 50px; */
         }
