@@ -15,7 +15,6 @@ const ServiceCard = ({image,text})=> {
 export default ServiceCard
 
 const Cards = styled.div`
-    /* border: 1px solid red; */
     width: 280px;
     padding: 20px;
     color: #40196d;
@@ -24,8 +23,8 @@ const Cards = styled.div`
 
     #profile {
         background-color: rgb(223, 227, 255);
-        width: 37px;
-        height: 38px;
+        width: auto;
+        height: auto;
         border-radius: 19px;
         font-size: 20px;
         text-align: center;
@@ -33,13 +32,15 @@ const Cards = styled.div`
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
+        /* border: 1px solid red; */
     }
     @media (max-width: 450px) {
         padding: 10px;
         /* border: 1px solid red; */
         
         #profile {
-            width: 55px;
+            width: 50px;
+            height: 35px;
             /* margin-right: 50px; */
         }
     }
@@ -47,10 +48,11 @@ const Cards = styled.div`
         display: flex;
         width: 100%;
         margin-bottom: 20px;
-        /* justify-content: center; */
         align-items: center;
         #profile {
             margin-right: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
         }
     }
 `
