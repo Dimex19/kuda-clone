@@ -4,13 +4,15 @@ import styled from 'styled-components'
 const ImageTemplate = ({image,styling}) => {
   return (
         // <img src={image} alt="" style={styling} />
-        <SectionImage src={image} style={styling}></SectionImage>
+        <SectionImage className="image" src={image} style={styling}></SectionImage>
   )
 }
 
 export default ImageTemplate
 
 const SectionImage = styled.img`
+
+    max-width: 450px;
     @media (max-width: 800px) {
         max-width: 350px;
     }

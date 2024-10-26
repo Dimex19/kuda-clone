@@ -3,11 +3,11 @@ import Image from '../assets/image/section-two.png'
 import styled from "styled-components"
 import Texts from './Texts'
 
-const Template = ({texts,image})=> {
+const Template = ({texts})=> {
     return (
         <>
             <Wrapper>
-                <TextTemplate>
+                <TextTemplate className="text"> 
                     {texts}
                 </TextTemplate> 
             </Wrapper>

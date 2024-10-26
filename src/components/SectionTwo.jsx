@@ -12,7 +12,7 @@ import ImageFive from '../assets/image/section-six.png'
 import ImageSix from '../assets/image/section-seven.png'
 const SectionTwo = ()=> {
 
-    const imageStyle = {
+    const  ImageStyle= {
         width: '200px',
         height: '200px',
         borderRadius: '10px',
@@ -22,7 +22,7 @@ const SectionTwo = ()=> {
         
         <>
             <Container>
-                <Template texts={<Texts header="Your phone + our app + a debit card = a simpler life." para="We designed a money app for your lifestyle, and you can get a debit card to go with it. That's all you need to make the right money moves." link="Open An Account in Minutes"/>} image={SectionImage} arrow={`${<FaAngleRight />}`}/>
+                <Template texts={<Texts header="Your phone + our app + a debit card = a simpler life." para="We designed a money app for your lifestyle, and you can get a debit card to go with it. That's all you need to make the right money moves." link="Open An Account in Minutes"/>} image={SectionImage} arrow={<FaAngleRight />}/>
                 <ImageTemplate image={ImageOne} styling={{}}/>
             </Container>
             <Container>
@@ -55,15 +55,24 @@ const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     max-width: 70%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 200px;
 
-    @media (max-width: 800px) {
-        justify-content: center;
 
-        
+    @media (max-width: 800px) {
+        justify-content: center; 
     }
+    @media (max-width: 450px) {
+        /* flex-direction: column; */
+    .text {
+        flex: 1;
+        order: 1;
+    }
+    .image {
+      order: 2;
+    }
+  }
 `
