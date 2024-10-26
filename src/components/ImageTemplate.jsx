@@ -14,7 +14,7 @@ const SectionImage = styled.img`
 
     max-width: 450px;
     @media (max-width: 800px) {
-        max-width: 350px;
+        max-width: 300px;
     }
 `
 // const SectionImage = styled.img`
