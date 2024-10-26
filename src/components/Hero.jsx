@@ -90,6 +90,10 @@ const HeroText = styled.div`
     }
     #heroPara {
         margin-bottom: 40px;
+
+        @media (max-width: 450px) {
+            margin-bottom: 30px;
+        }  
     }
     p {
         /* margin-bottom: 40px; */
@@ -150,6 +154,7 @@ const HeroText = styled.div`
         @media (max-width: 450px) {
             margin-right: auto;
             margin-left: auto;
+            margin-top: 15px;
             /* border: 1px solid red; */
             justify-content: center;
 
