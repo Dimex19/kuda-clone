@@ -19,7 +19,7 @@ const Cards = styled.div`
     width: 280px;
     padding: 20px;
     color: #40196d;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     #profile {
