@@ -49,6 +49,13 @@ const TextTemplate = styled.div`
         margin-bottom: 40px;
         margin-top: 40px;
         text-align: center;
+
+        h1 {
+            text-align: center;
+        }
+        a {
+            text-align: center;
+        }
     }
 `
 const ImageTemplate = styled.div``

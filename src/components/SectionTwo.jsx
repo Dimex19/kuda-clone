@@ -63,5 +63,9 @@ const Container = styled.div`
 
     @media (max-width: 800px) {
         justify-content: center;
+
+        image {
+            max-width: 350px;
+        }
     }
 `
