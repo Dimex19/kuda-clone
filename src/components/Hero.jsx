@@ -52,6 +52,11 @@ const HeroContainer = styled.div`
             justify-content: center;
             min-height: 100%;
         }  
+    @media (max-width: 450px) {
+            max-width: 90%;
+            justify-content: center;
+            min-height: 100%;
+        }  
 `
 const HeroText = styled.div`
     max-width: 320px;
@@ -79,8 +84,8 @@ const HeroText = styled.div`
         }  
         @media (max-width: 450px) {
             text-align: center;
-            font-size: 28px;
-            line-height: 35px;
+            font-size: 32px;
+            line-height: 45px;
         }  
     }
     #heroPara {
@@ -95,8 +100,8 @@ const HeroText = styled.div`
         }
         @media (max-width: 450px) {
             text-align: center;
-            font-size: 15px;
-            line-height: 23px;
+            font-size: 17px;
+            line-height: 26px;
         }  
     }
     .buttons {
