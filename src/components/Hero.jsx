@@ -18,9 +18,9 @@ const Hero = () => {
                 <h1>The money app for Africans.</h1>
                 <p id='heroPara'>Make free transfers, enjoy cashless payment options and earn interest on your savings with Kuda.</p>
                 <div className="buttons">
-                    <StoreButton keys="firstStrBtn" text="Download on the" text2="App Store" Logo={<IoLogoApple/>}/>
+                    <StoreButton link="https://kuda.onelink.me/abUI/344e3dde/" keys="firstStrBtn" text="Download on the" text2="App Store" Logo={<IoLogoApple/>}/>
 
-                    <StoreButton keys="SecondStrBtn" text="GET IT ON" text2="Google Play" Logo={<FaGooglePlay />} width="130px"/>
+                    <StoreButton link="https://kuda.onelink.me/abUI/344e3dde/" keys="SecondStrBtn" text="GET IT ON" text2="Google Play" Logo={<FaGooglePlay />} width="130px"/>
                 </div>
                 <div className="license">
                     <License id="license1" text="Fully Licensed by CBN" image={CBN}/>
@@ -114,6 +114,9 @@ const HeroText = styled.div`
             /* margin-right: 50px;
             margin-left: auto; */
             justify-content: center;
+        }
+        a {
+            text-decoration: none;
         }
         /* margin-bottom: 30px; */
     }

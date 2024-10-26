@@ -1,12 +1,14 @@
-const StoreButton = ({keys,Logo, text, text2, width})=> {
+const StoreButton = ({keys,Logo, text, text2, width, link})=> {
     return (
         <>
-            <div className={`btn ${keys}`}style={{width: width}}>
-                <div id="AppleLogo">
-                    {Logo}
+            <a href={link} target="_blank">
+                <div className={`btn ${keys}`}style={{width: width}}>
+                    <div id="AppleLogo">
+                        {Logo}
+                    </div>
+                    <p>{text} <br /><span>{text2}</span></p>
                 </div>
-                <p>{text} <br /><span>{text2}</span></p>
-            </div>        
+            </a>    
         </>
     )
 }
