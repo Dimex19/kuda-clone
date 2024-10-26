@@ -35,12 +35,11 @@ const Cards = styled.div`
         /* border: 1px solid red; */
     }
     @media (max-width: 450px) {
-        padding: 10px;
         /* border: 1px solid red; */
         
         #profile {
-            width: 50px;
-            height: 35px;
+            width: 70px;
+            height: 40px;
             /* margin-right: 50px; */
         }
     }
