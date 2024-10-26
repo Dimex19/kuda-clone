@@ -67,7 +67,9 @@ const Container = styled.div`
     }
     @media (max-width: 450px) {
         /* flex-direction: column; */
+        max-width: 85%;
         margin-top: 100px;
+
     .text {
         flex: 1;
         order: 1;

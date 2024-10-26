@@ -18,6 +18,7 @@ const Template = ({texts})=> {
 export default Template
 
 const Wrapper = styled.div`
+
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -28,7 +29,7 @@ const Wrapper = styled.div`
 const TextTemplate = styled.div`
 
     h1 {
-        max-width: 230px;
+        /* max-width: 230px; */
         color: #40196d;
         margin-bottom: 25px;
         font-weight: 800;
@@ -58,6 +59,7 @@ const TextTemplate = styled.div`
         }
     }
     @media (max-width: 450px) {
+        /* max-width: 100%; */
         margin-bottom: 40px;
         margin-top: 40px;
         /* text-align: center; */
@@ -69,10 +71,17 @@ const TextTemplate = styled.div`
 
         h1 {
             text-align: center;
+            font-size: 25.2px;
         }
         a {
             text-align: center;
             /* border: 1px solid blue; */
+        }
+        #para {
+            text-align: center;
+            line-height: 22px;
+            font-size: 12.5px;
+            max-width: 100%;
         }
     }
 `
