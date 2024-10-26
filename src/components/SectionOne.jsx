@@ -37,7 +37,7 @@ const Container = styled.div`
 
     @media (max-width: 800px) {
         max-width: 80%;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 `
 const CardsRowOne = styled.div`

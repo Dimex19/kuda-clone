@@ -34,6 +34,15 @@ const Cards = styled.div`
         align-items: center;
         margin-bottom: 20px;
     }
+    @media (max-width: 450px) {
+        padding: 10px;
+        /* border: 1px solid red; */
+        
+        #profile {
+            width: 55px;
+            /* margin-right: 50px; */
+        }
+    }
     @media (max-width: 800px) {
         display: flex;
         width: 100%;
