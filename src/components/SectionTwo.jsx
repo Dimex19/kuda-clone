@@ -22,7 +22,7 @@ const SectionTwo = ()=> {
         
         <>
             <Container>
-                <Template texts={<Texts header="Your phone + our app + a debit card = a simpler life." para="We designed a money app for your lifestyle, and you can get a debit card to go with it. That's all you need to make the right money moves." link="Open An Account in Minutes"/>} image={SectionImage} arrow={<FaAngleRight />}/>
+                <Template klass="firstText" texts={<Texts header="Your phone + our app + a debit card = a simpler life." para="We designed a money app for your lifestyle, and you can get a debit card to go with it. That's all you need to make the right money moves." link="Open An Account in Minutes"/>} image={SectionImage} arrow={<FaAngleRight />}/>
                 <ImageTemplate image={ImageOne} styling={{}}/>
             </Container>
             <Container>
@@ -62,7 +62,10 @@ const Container = styled.div`
     margin-left: auto;
     margin-top: 200px;
 
-
+    .firstText h1 {
+        /* border: 1px solid red; */
+        max-width: 220px;
+    }
     @media (max-width: 800px) {
         justify-content: center; 
     }

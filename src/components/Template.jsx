@@ -3,11 +3,11 @@ import Image from '../assets/image/section-two.png'
 import styled from "styled-components"
 import Texts from './Texts'
 
-const Template = ({texts})=> {
+const Template = ({texts, klass})=> {
     return (
         <>
             <Wrapper>
-                <TextTemplate className="text"> 
+                <TextTemplate className={`text ${klass}`}> 
                     {texts}
                 </TextTemplate> 
             </Wrapper>
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 `
 const TextTemplate = styled.div`
     /* border: 1px solid blue; */
-    max-width: 300px;
+    max-width: 350px;
 
     h1 {
         /* max-width: 230px; */
