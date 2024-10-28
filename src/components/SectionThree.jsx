@@ -33,4 +33,9 @@ const Container = styled.div`
     margin-top: 50px;
     margin-bottom: 50px;
     animation-name: example;
+  
+
+    p {
+        font-size: 12px;
+    }
 `
