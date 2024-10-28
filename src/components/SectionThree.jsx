@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 50px;
     animation-name: example;
