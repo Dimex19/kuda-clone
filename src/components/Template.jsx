@@ -27,12 +27,16 @@ const Wrapper = styled.div`
     /* margin-bottom: 200px; */
 `
 const TextTemplate = styled.div`
+    /* border: 1px solid blue; */
+    max-width: 300px;
 
     h1 {
         /* max-width: 230px; */
         color: #40196d;
         margin-bottom: 25px;
+        font-size: 28px;
         font-weight: 800;
+        /* border: 1px solid red; */
     }
     #para {
         font-size: 12px;
