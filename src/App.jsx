@@ -1,3 +1,4 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -7,6 +8,11 @@ import SectionTwo from './components/SectionTwo'
 const App = ()=> {
   return (
     <>
+      <BrowserRouter>
+        <Routes>
+          <Route></Route>
+        </Routes>
+      </BrowserRouter>
       <Header />
       <Hero />
       <SectionOne />

@@ -86,8 +86,10 @@ export default Header
 
 const Wrapper = styled.div`
     position: fixed;
-    width: 100vw;
+    width: 1300px;
+    /* margin-left: 70px; */
     background-color: #fff;
+    /* border: 1px solid red; */
 `
 const MainContainer = styled.div`
     display: flex;
