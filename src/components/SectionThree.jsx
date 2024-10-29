@@ -31,7 +31,7 @@ const SectionThree = () => {
             <img src={WEF} alt="" />
             <img src={FF} alt="" />
             <img src={BBC} alt="" style={{height:'40px', width:'150px'}}/>
-            <img src={CNBC} alt="" style={{height:'60px', width:'150px'}}/>
+            <img src={CNBC} alt="" style={{height:'60px'}}/>
             <img src={EuroMoney} alt="" style={{height:'50px', width:'150px'}}/>
         </BlogContainer>
     </Container>
@@ -96,5 +96,10 @@ const BlogContainer = styled.div`
         height: auto;
         color: #000;
         filter: grayscale(100%);
+        margin-bottom: 40px;
+
+        @media (max-width: 450px) {
+            width: 90px;
+        }
     }
 `
