@@ -82,7 +82,7 @@ const BlogContainer = styled.div`
     align-items: center;
     width: 100vw;
     margin-top: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-left: 70px;
     padding-right: 70px;
 
