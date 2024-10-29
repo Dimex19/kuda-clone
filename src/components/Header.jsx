@@ -23,17 +23,20 @@ const Header = ()=> {
     }
 
     return (
-        <>
-            <PopUp className="popup">
-                <PopUpNav>
-                    <img src={KudaLogo} alt="" />
-                    <IoMdClose id="popUpClose" onClick={ClosePopUp}/>
-                </PopUpNav>
-                <PopUpBtn>
-                    <Button width="120px" height="40px" color="#fff" bgcolor="#40196d" text="Join Kuda"  />
-                    <Button width="120px" height="40px" color="#40196d" bgcolor="#eff1ff" text="Sign In"/>
-                </PopUpBtn>
-            </PopUp>
+        <Wrapper>
+            <PopUpWrapper>
+                <PopUp className="popup">
+                    <PopUpNav>
+                        <img src={KudaLogo} alt="" />
+                        <IoMdClose id="popUpClose" onClick={ClosePopUp}/>
+                    </PopUpNav>
+                    <PopUpBtn>
+                        <Button width="120px" height="40px" color="#fff" bgcolor="#40196d" text="Join Kuda"  />
+                        <Button width="120px" height="40px" color="#40196d" bgcolor="#eff1ff" text="Sign In"/>
+                    </PopUpBtn>
+                </PopUp>
+            </PopUpWrapper>
+
             <MainContainer>
                 <NavLeft>
                     <img src={KudaLogo} alt="" />
@@ -76,11 +79,16 @@ const Header = ()=> {
                 
             </MainContainer>
             
-        </>
+        </Wrapper>
     )
 }
 export default Header
 
+const Wrapper = styled.div`
+    position: fixed;
+    width: 100vw;
+    background-color: #fff;
+`
 const MainContainer = styled.div`
     display: flex;
     justify-content: space-between;
@@ -161,6 +169,9 @@ const SideBar = styled.div`
     @media (max-width: 800px) {
             display: flex;
         }  
+`
+const PopUpWrapper = styled.div`
+    position: fixed;
 `
 const PopUp = styled.div`
     display: none;
