@@ -166,7 +166,7 @@ const HeroText = styled.div`
         display: flex; 
         font-size: 10px;
         margin-right: 5px;
-        opacity: 0.5;
+        /* opacity: 0.5; */
         }
         .license1 {
             display: flex;

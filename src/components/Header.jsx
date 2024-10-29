@@ -14,7 +14,7 @@ const Header = ()=> {
         // alert('Hello Adeola')
         const popup = document.getElementsByClassName('popup')
         popup[0].style.display = 'block'
-        console.log(popup);
+        // console.log(popup);
         
     }
     const ClosePopUp = ()=> {
@@ -176,8 +176,7 @@ const PopUp = styled.div`
     img {
         width: 75px;
         height: 40px;
-    }
-    
+    }   
 `
 const PopUpNav = styled.div`
     display: flex;
