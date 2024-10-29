@@ -93,7 +93,7 @@ const MainContainer = styled.div`
     @media (max-width: 800px) {
             padding-left: 20px;
             padding-right: 20px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
 
         }  
     `
