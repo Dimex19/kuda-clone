@@ -5,6 +5,7 @@ import Button from "./Button"
 import { IoReorderTwoOutline } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 
 
@@ -43,22 +44,22 @@ const Header = ()=> {
                     {/* <h1>Hello World</h1> */}
                     <NavLinks>
                         <div id="dropdown">
-                            <p>Personal </p>
+                            <Hyperlink to='/'><p>Personal </p></Hyperlink>
                             <IoMdArrowDropdown />
 
                         </div>
                         <div id="dropdown">
-                            <p>Business</p>
+                            <Hyperlink to='/business'><p>Business</p></Hyperlink>
                             <IoMdArrowDropdown />
 
                         </div>
                         <div id="dropdown">
-                            <p>Company</p>
+                            <Hyperlink to='/company'><p>Company</p></Hyperlink>
                             <IoMdArrowDropdown />
 
                         </div>
                         <div id="dropdown">
-                            <p>Help</p>
+                            <Hyperlink to='/help'><p>Help</p></Hyperlink>
                             <IoMdArrowDropdown />
 
                         </div>   
@@ -131,7 +132,10 @@ const NavLinks = styled.div`
             display: flex;
             /* border: 1px solid red; */
             margin-right: 40px;
+
+            
         }
+        
         @media (max-width: 800px) {
             display: none;
         }  
@@ -211,4 +215,10 @@ const PopUpBtn = styled.div`
         cursor: pointer;
         margin-right: 20px;
     }
+`
+
+const Hyperlink = styled(Link)`
+    cursor: pointer;
+    text-decoration: none;
+    /* border: 1px solid red; */
 `

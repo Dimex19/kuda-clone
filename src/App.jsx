@@ -1,23 +1,23 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import SectionOne from './components/SectionOne'
-import SectionThree from './components/SectionThree'
-import SectionTwo from './components/SectionTwo'
+import Personal from './Pages/Personal'
+import Business from './Pages/Business'
+import Company from './Pages/Company'
+import Help from './Pages/Help'
 const App = ()=> {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route></Route>
+        {/* <Route path='/' element={<Homepage/>}/>
+        <Route path='/about' element={<About/>}/> */}
+          <Route path='/' element={<Personal/>}/>
+          <Route path='/business' element={<Business />} />
+          <Route path='/company' element={<Company />} />
+          <Route path='/help' element={<Help />} />
         </Routes>
       </BrowserRouter>
-      <Header />
-      <Hero />
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
+      
     </>
   )
 }
