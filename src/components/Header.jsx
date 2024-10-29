@@ -4,21 +4,36 @@ import NigeriaFlag from '../assets/icons/flag-of-nigeria.svg'
 import Button from "./Button"
 import { IoReorderTwoOutline } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 
 
 const Header = ()=> {
 
-    const Adeola = ()=>{
+    const OpenPopUp = ()=>{
         // alert('Hello Adeola')
         const popup = document.getElementsByClassName('popup')
         popup[0].style.display = 'block'
         console.log(popup);
         
     }
+    const ClosePopUp = ()=> {
+        const popup = document.getElementsByClassName('popup')
+        popup[0].style.display = 'none'
+    }
 
     return (
         <>
+            <PopUp className="popup">
+                <PopUpNav>
+                    <img src={KudaLogo} alt="" />
+                    <IoMdClose id="popUpClose" onClick={ClosePopUp}/>
+                </PopUpNav>
+                <PopUpBtn>
+                    <Button width="120px" height="40px" color="#fff" bgcolor="#40196d" text="Join Kuda"  />
+                    <Button width="120px" height="40px" color="#40196d" bgcolor="#eff1ff" text="Sign In"/>
+                </PopUpBtn>
+            </PopUp>
             <MainContainer>
                 <NavLeft>
                     <img src={KudaLogo} alt="" />
@@ -53,16 +68,14 @@ const Header = ()=> {
                         <img src={NigeriaFlag} alt="" style={{width:"30px", height:"30px"}}/>
                     </div>
                     <SideBar>
-                        <IoReorderTwoOutline onClick={Adeola}/>
+                        <IoReorderTwoOutline onClick={OpenPopUp}/>
                     </SideBar>
                     
 
                 </NavRight>
-                <PopUp className="popup">
-                    <img src={KudaLogo} alt="" />
-                </PopUp>
+                
             </MainContainer>
-
+            
         </>
     )
 }
@@ -72,18 +85,16 @@ const MainContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: blue;
     // border: 1px solid red;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     height: 60px;
     padding-left: 50px;
     padding-right: 50px;
-    /* position: fixed; */
-    /* z-index: -1; */
-    /* width: 100%; */
     @media (max-width: 800px) {
             padding-left: 20px;
             padding-right: 20px;
+            border: 1px solid red;
+
         }  
     `
 const NavLeft = styled.div`
@@ -154,11 +165,37 @@ const SideBar = styled.div`
 const PopUp = styled.div`
     display: none;
     position: absolute;
-    border: 1px solid red;
+    background-color: #fff;
     margin-left: 0px;
     width: 100vw;
     height: 100vh;
-    .popup {
-        display: none;
+    margin-top: 0px;
+    /* border: 1px solid red; */
+    /* padding-right: 20px; */
+
+    img {
+        width: 75px;
+        height: 40px;
+    }
+    
+`
+const PopUpNav = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin: 10px 20px;
+
+    #popUpClose {
+        font-size: 28px;
+        color: #40196D;
+    }
+    
+`
+const PopUpBtn = styled.div`
+    margin: 20px 20px ;
+    Button {
+        cursor: pointer;
+        margin-right: 20px;
     }
 `
