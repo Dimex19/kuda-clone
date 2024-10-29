@@ -8,8 +8,13 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 
 const Header = ()=> {
+
     const Adeola = ()=>{
-        alert('Hello Adeola')
+        // alert('Hello Adeola')
+        const popup = document.getElementsByClassName('popup')
+        popup[0].style.display = 'block'
+        console.log(popup);
+        
     }
 
     return (
@@ -53,6 +58,9 @@ const Header = ()=> {
                     
 
                 </NavRight>
+                <PopUp className="popup">
+                    <img src={KudaLogo} alt="" />
+                </PopUp>
             </MainContainer>
 
         </>
@@ -142,4 +150,15 @@ const SideBar = styled.div`
     @media (max-width: 800px) {
             display: flex;
         }  
+`
+const PopUp = styled.div`
+    display: none;
+    position: absolute;
+    border: 1px solid red;
+    margin-left: 0px;
+    width: 100vw;
+    height: 100vh;
+    .popup {
+        display: none;
+    }
 `
