@@ -8,6 +8,10 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 
 const Header = ()=> {
+    const Adeola = ()=>{
+        alert('Hello Adeola')
+    }
+
     return (
         <>
             <MainContainer>
@@ -44,7 +48,7 @@ const Header = ()=> {
                         <img src={NigeriaFlag} alt="" style={{width:"30px", height:"30px"}}/>
                     </div>
                     <SideBar>
-                        <IoReorderTwoOutline />
+                        <IoReorderTwoOutline onClick={Adeola}/>
                     </SideBar>
                     
 
