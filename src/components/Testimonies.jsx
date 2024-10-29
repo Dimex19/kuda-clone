@@ -3,13 +3,13 @@ import styled from 'styled-components'
 const Testimonies = ({paragraph, image, name}) => {
   return (
     <>
-        <Container>
+        <CardContainer>
             <p>{paragraph}</p>
             <Profile>
                 <img src={image} alt="" />
                 <h6>{name}</h6>
             </Profile>
-        </Container>
+        </CardContainer>
         
     </>
 )
@@ -17,8 +17,17 @@ const Testimonies = ({paragraph, image, name}) => {
 
 export default Testimonies
 
-const Container = styled.div`
-    max-width: 350px;
+const CardContainer = styled.div`
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-right: 20px;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 `
     
 
