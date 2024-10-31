@@ -97,7 +97,7 @@ const MainContainer = styled.div`
     justify-content: space-between;
     max-width: 1300px;
     align-items: center;
-    // border: 1px solid red;
+    /* border: 1px solid red; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     height: 60px;
     padding-left: 50px;

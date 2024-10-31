@@ -39,14 +39,18 @@ export default Hero
 const HeroContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
+    /* margin-top: 50px; */
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
     align-items: center;
     max-width: 70%;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 0px);
+    /* min-height: calc(100vh - 60px); */
     /* border: 1px solid red; */
-
+    @media (min-width: 1394px) {
+        min-height: 90vh;
+    }
     @media (max-width: 800px) {
             max-width: 80%;
             justify-content: center;

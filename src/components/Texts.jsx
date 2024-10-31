@@ -6,7 +6,11 @@ const Texts = ({header,para,link,arrow})=> {
         <>
             <h1>{header}</h1>
             <p id="para">{para}</p>
-            <a href=""><p>{link} <span>{arrow}</span></p></a>
+            <div id="linkArrow">
+                <a href=""><p>{link} </p></a>
+                <span>{arrow}</span>
+            </div>
+            
         </>
     )
 }

@@ -45,10 +45,16 @@ const TextTemplate = styled.div`
     }
     a {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         font-size: 12px;
         color: #40196d;
         font-weight: 700;
+    }
+    #linkArrow {
+        display: flex;
+        align-items: center;
+        /* border: 1px solid red; */
+
     }
     @media (max-width: 800px) {
         margin-bottom: 40px;
